@@ -17,7 +17,8 @@ phases:
       - mv terraform /usr/local/bin/
       - ls -lrt /usr/local/bin/terraform
       - terraform -v 
-      - cd $CODEBUILD_SRC_DIR/hcl_terraform/
+      - # cd $CODEBUILD_SRC_DIR/hcl_terraform/
+      - cd hcl_terraform/
       - terraform init 
       - terraform fmt
       - terraform validate 
