@@ -19,6 +19,7 @@ phases:
       - terraform -v 
       - # cd $CODEBUILD_SRC_DIR/hcl_terraform/
       - cd hcl_terraform/
+      - rm -rf .terraform/providers
       - terraform init 
       - terraform fmt
       - terraform validate 
